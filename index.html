@@ -23,7 +23,7 @@
 	<section class="slide">
 		<h2>SVG Sprite</h2>
 		<pre>
-			<code>&lt;svg style="display:none" ... &gt;</code>
+			<code>&lt;svg class="visually-hidden" ... &gt;</code>
 			<code>	&lt;symbol id="icon-hipster" viewBox="0 0 32 32"&gt;</code>
 			<code>		&lt;title&gt;home&lt;title/&gt;</code>
 			<code>		&lt;path d="..."&gt;&lt;/path&gt;</code>
@@ -36,7 +36,20 @@
 	<section class="slide">
 		<h2>SVG Sprite</h2>
 		<pre>
-			<code>&lt;svg style="display:none" ... &gt;</code>
+			<code class="mark">&lt;svg class="visually-hidden" ... &gt;</code>
+			<code>	&lt;symbol id="icon-hipster" viewBox="0 0 32 32"&gt;</code>
+			<code>		&lt;title&gt;home&lt;title/&gt;</code>
+			<code>		&lt;path d="..."&gt;&lt;/path&gt;</code>
+			<code>	&lt;/symbol&gt;</code>
+			<code>	...</code>
+			<code>&lt;/svg&gt;</code>
+		</pre>
+	</section>
+
+	<section class="slide">
+		<h2>SVG Sprite</h2>
+		<pre>
+			<code>&lt;svg class="visually-hidden" ... &gt;</code>
 			<code class="mark">	&lt;symbol id="icon-hipster" viewBox="0 0 32 32"&gt;</code>
 			<code>		&lt;title&gt;home&lt;title/&gt;</code>
 			<code>		&lt;path d="..."&gt;&lt;/path&gt;</code>
@@ -49,7 +62,7 @@
 	<section class="slide">
 		<h2>SVG Sprite</h2>
 		<pre>
-			<code>&lt;svg style="display:none" ... &gt;</code>
+			<code>&lt;svg class="visually-hidden" ... &gt;</code>
 			<code class="mark">	&lt;symbol <mark class="important">id="icon-hipster"</mark> viewBox="0 0 32 32"&gt;</code>
 			<code>		&lt;title&gt;home&lt;title/&gt;</code>
 			<code>		&lt;path d="..."&gt;&lt;/path&gt;</code>
@@ -62,13 +75,72 @@
 	<section class="slide">
 		<h2>SVG Sprite</h2>
 		<pre>
-			<code>&lt;svg style="display:none" ... &gt;</code>
+			<code>&lt;svg class="visually-hidden" ... &gt;</code>
 			<code>	&lt;symbol id="icon-hipster" viewBox="0 0 32 32"&gt;</code>
 			<code>		&lt;title&gt;home&lt;title/&gt;</code>
 			<code class="mark">		&lt;path d="..."&gt;&lt;/path&gt;</code>
 			<code>	&lt;/symbol&gt;</code>
 			<code>	...</code>
 			<code>&lt;/svg&gt;</code>
+		</pre>
+	</section>
+
+
+	<section class="slide">
+		<h2>CSS</h2>
+		<pre>
+			<code>.visually-hidden {</code>
+			<code>	position: absolute;</code>
+			<code>	width: 1px;</code>
+			<code>	height: 1px;</code>
+			<code>	margin: -1px;</code>
+			<code>	overflow: hidden;</code>
+			<code>	padding: 0;</code>
+			<code>	border: 0;</code>
+			<code>	clip: rect(0 0 0 0);</code>
+			<code>}</code>
+		</pre>
+	</section>
+
+	<section class="slide">
+		<h2>CSS</h2>
+		<pre>
+			<code>.icon {</code>
+			<code>	display: inline-block;</code>
+			<code>	width: 1em;</code>
+			<code>	height: 1em;</code>
+			<code>	stroke-width: 0;</code>
+			<code>	stroke: currentColor;</code>
+			<code>	fill: currentColor;</code>
+			<code>}</code>
+		</pre>
+	</section>
+
+	<section class="slide">
+		<h2>CSS</h2>
+		<pre>
+			<code>.icon {</code>
+			<code>	display: inline-block;</code>
+			<code>	<mark>width: 1em;</mark></code>
+			<code>	<mark>height: 1em;</mark></code>
+			<code>	stroke-width: 0;</code>
+			<code>	stroke: currentColor;</code>
+			<code>	fill: currentColor;</code>
+			<code>}</code>
+		</pre>
+	</section>
+
+	<section class="slide">
+		<h2>CSS</h2>
+		<pre>
+			<code>.icon {</code>
+			<code>	display: inline-block;</code>
+			<code>	width: 1em;</code>
+			<code>	height: 1em;</code>
+			<code>	stroke-width: 0;</code>
+			<code>	<mark>stroke: currentColor;</mark></code>
+			<code>	<mark>fill: currentColor;</mark></code>
+			<code>}</code>
 		</pre>
 	</section>
 
