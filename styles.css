@@ -1,0 +1,17 @@
+pre code {
+	font-size: 22px;
+}
+
+#cover {
+	text-align: center;
+}
+
+#cover h2 {
+	margin: 0;
+	text-align: center;
+	font-size: 96px;
+}
+
+#cover p {
+	margin: 10px 0 0;
+}
